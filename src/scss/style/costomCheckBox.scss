@@ -1,0 +1,75 @@
+.wrapper {
+  display: inline-flex;
+  background: #fff;
+  height: 100px;
+  width: 250px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  // padding: 20px 15px;
+  box-shadow: 5px 5px 30px rgb(0, 0, 0 / 20%);
+}
+
+
+.book-flight__radio .book-flight__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+//   border: 2px solid #180f2f;
+  transition: all 0.5s ease-out;
+}
+input[type="radio"] {
+  display: none;
+}
+
+.book-flight__radio .book-flight__button span {
+    font-family: Nunito;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    
+}
+
+@media screen and (max-width: 480px) {
+  .book-flight__radio .book-flight__button span {
+    font-family: Nunito;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #fff;
+}
+}
+
+
+input#one:checked ~ .option-1,
+input#two:checked ~ .option-2,
+input#three:checked ~ .option-3 {
+  background: #fff;
+  border: 1px solid #00343C;
+}
+
+input#one:checked ~ .option-1 span,
+input#two:checked ~ .option-2 span,
+input#three:checked ~ .option-3 span {
+    font-family: Nunito;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    color: #00343c;
+    
+}
+
+@media screen and (max-width: 480px) {
+  input#one:checked ~ .option-1 span,
+input#two:checked ~ .option-2 span,
+input#three:checked ~ .option-3 span {
+    font-family: Nunito;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #00343c;
+    
+}
+}
